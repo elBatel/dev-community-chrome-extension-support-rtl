@@ -2,7 +2,7 @@ const pattern = /[\u05D0-\u05EA]|[\u0620-\u063F]|[\u0641-\u064A]|[\u0675-\u06D3]
 
 let mutation = () => {
     document
-        .querySelectorAll('body , .article, .comments, .comment-trees, .show-page-content-display, .about-the-author, .left-column, .single-other-article, .inner-footer-container, .article-actions, .inner-comment')
+        .querySelectorAll('body , .home, .article, article,.comments, .comment-trees, .show-page-content-display, .about-the-author, .left-column, .single-other-article, .inner-footer-container, .article-actions, .inner-comment')
         .forEach(element => {
             // check arabic in elements dom
             if (pattern.test(element.textContent)) {
